@@ -4,7 +4,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "dim"
+let colors_name = "teal"
 
 " In diffs, added lines are green, changed lines are yellow, deleted lines are
 " red, and changed text (within a changed line) is bright yellow and bold.
@@ -46,12 +46,12 @@ highlight Search         ctermfg=0    ctermbg=7
 highlight Comment ctermfg=0
 highlight Constant ctermfg=3
 highlight Identifier cterm=NONE ctermfg=12
-highlight Function cterm=NONE ctermfg=13
+highlight Function cterm=NONE ctermfg=11
 highlight Statement ctermfg=NONE
-highlight Conditional ctermfg=11
-highlight Repeat ctermfg=11
-highlight Label ctermfg=11
-highlight Keyword ctermfg=11
+highlight Conditional ctermfg=13
+highlight Repeat ctermfg=13
+highlight Label ctermfg=13
+highlight Keyword ctermfg=13
 highlight Exception ctermfg=12
 highlight PreProc ctermfg=5
 highlight Type ctermfg=10
@@ -85,20 +85,22 @@ hi! link vimParenSep vimSep
 " Javascript
 highlight jsFuncCall cterm=NONE ctermfg=9
 highlight jsReturn ctermfg=13
+hi! link jsGlobalObjects NONE
 highlight jsGlobalNodeObjects ctermfg=11
-highlight jsOperator ctermfg=7
-highlight jsArrowFunction ctermfg=NONE
+" highlight jsOperator ctermfg=7
+hi! link jsArrowFunction NONE
 highlight jsUndefined ctermfg=7
 
 " Python
 highlight pythonImport ctermfg=10
 highlight pythonStatement ctermfg=10
 highlight pythonClassVar ctermfg=1
-highlight pythonOperator ctermfg=7
+" highlight pythonOperator ctermfg=7
 hi! link pythonRepeat Repeat
 highlight pythonFunctionCall ctermfg=9
-highlight pythonDottedName ctermfg=NONE
-highlight pythonDecorator ctermfg=NONE
+hi! link pythonDottedName NONE
+hi! link pythonDecorator NONE
+hi! link pythonDecoratorName NONE
 hi! link pythonBuiltinFunc pythonFunctionCall
 hi! link pythonStrFormatting String
 
