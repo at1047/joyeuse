@@ -70,17 +70,29 @@ highlight vimCommand ctermfg=10
 highlight vimMapLhs ctermfg=11
 highlight vimMapRhs ctermfg=11
 highlight vimNotation ctermfg=11
-highlight vimBracket ctermfg=NONE
+hi! link vimBracket NONE
 highlight vimMapMod ctermfg=11
 highlight vimMapModKey ctermfg=11
 highlight vimFuncName ctermfg=9
-highlight vimFuncSID ctermfg=NONE
+hi! link vimFuncSID NONE
 highlight vimEnvvar ctermfg=NONE
 highlight vimSep ctermfg=NONE
 highlight vimSet ctermfg=NONE
-highlight vimOption ctermfg=NONE
-hi! link vimParenSep vimSep
+hi! link vimOption NONE
+hi! link vimParenSep NONE
 
+" zsh
+hi! link zshVariableDef NONE
+hi! link zshCommands NONE
+highlight zshCommands ctermfg=9
+highlight Identifier ctermfg=NONE
+hi! link zshDelim NONE
+hi! link zshFlag NONE
+hi! link zshSubstDelim String
+hi! link zshSubst String
+hi! link shSemicolon NONE
+hi! link zshStringDelimiter String
+hi! link zshString String
 
 " Javascript
 highlight jsFuncCall cterm=NONE ctermfg=9
@@ -104,7 +116,7 @@ hi! link pythonDecoratorName NONE
 hi! link pythonBuiltinFunc pythonFunctionCall
 hi! link pythonStrFormatting String
 
-" Dim line numbers, comments, color columns, the status line, splits and sign columns.
+" line numbers, comments, color columns, the status line, splits and sign columns.
 highlight LineNr ctermfg=15
 highlight CursorLine cterm=NONE ctermbg=8
 highlight CursorLineNr cterm=NONE ctermfg=7 ctermbg=8
