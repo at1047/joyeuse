@@ -80,6 +80,7 @@ highlight vimSep ctermfg=NONE
 highlight vimSet ctermfg=NONE
 hi! link vimOption NONE
 hi! link vimParenSep NONE
+hi! link vimUsrCmd String
 
 " zsh
 hi! link zshVariableDef NONE
