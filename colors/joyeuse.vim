@@ -81,6 +81,7 @@ highlight vimSet ctermfg=NONE
 hi! link vimOption NONE
 hi! link vimParenSep NONE
 hi! link vimUsrCmd String
+highlight Pmenu ctermfg=8 ctermbg=7
 
 " zsh
 hi! link zshVariableDef NONE
