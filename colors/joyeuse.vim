@@ -55,7 +55,7 @@ highlight Keyword ctermfg=13
 highlight Exception ctermfg=12
 highlight PreProc ctermfg=5
 highlight Type ctermfg=10
-" highlight Special ctermfg=5
+highlight Special ctermfg=4
 " highlight Underlined cterm=underline ctermfg=5
 " highlight Ignore ctermfg=15
 " highlight Error ctermfg=15 ctermbg=9
@@ -102,6 +102,9 @@ highlight jsGlobalNodeObjects ctermfg=11
 " highlight jsOperator ctermfg=7
 hi! link jsArrowFunction NONE
 highlight jsUndefined ctermfg=7
+hi! link jsxBraces NONE
+hi! link jsxComponentName NONE
+hi! link jsxCloseString NONE
 
 " Python
 highlight pythonImport ctermfg=10
@@ -115,6 +118,7 @@ hi! link pythonDecorator NONE
 hi! link pythonDecoratorName NONE
 hi! link pythonBuiltinFunc pythonFunctionCall
 hi! link pythonStrFormatting String
+hi! link pythonSpaceError NONE
 
 " line numbers, comments, color columns, the status line, splits and sign columns.
 highlight LineNr ctermfg=15
