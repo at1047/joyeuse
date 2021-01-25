@@ -122,6 +122,12 @@ hi! link pythonBuiltinFunc pythonFunctionCall
 hi! link pythonStrFormatting String
 hi! link pythonSpaceError NONE
 
+" Java
+hi! link javacommenttitle comment
+hi! link javadoctags comment
+
+
+
 " line numbers, comments, color columns, the status line, splits and sign columns.
 highlight LineNr ctermfg=15
 highlight CursorLine cterm=NONE ctermbg=8
