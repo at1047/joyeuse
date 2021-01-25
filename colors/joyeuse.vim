@@ -125,7 +125,11 @@ hi! link pythonSpaceError NONE
 " Java
 hi! link javacommenttitle comment
 hi! link javadoctags comment
-
+hi! link javaConstant NONE
+hi! link javaStructure NONE
+hi! link javaType pythonFunctionCall
+hi! link javaStorageClass NONE
+hi! link javaAccessKeyword pythonStatement
 
 
 " line numbers, comments, color columns, the status line, splits and sign columns.
