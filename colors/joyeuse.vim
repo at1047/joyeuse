@@ -6,6 +6,7 @@ endif
 
 let colors_name = "joyeuse"
 
+hi! ColorColumn ctermbg=8
 hi! StatusLine cterm=NONE ctermbg=8 ctermfg=15
 
 " In diffs, added lines are green, changed lines are yellow, deleted lines are
