@@ -6,6 +6,8 @@ endif
 
 let colors_name = "joyeuse"
 
+hi! StatusLine cterm=NONE ctermbg=8 ctermfg=15
+
 " In diffs, added lines are green, changed lines are yellow, deleted lines are
 " red, and changed text (within a changed line) is bright yellow and bold.
 highlight DiffAdd        ctermfg=0    ctermbg=2
@@ -108,6 +110,9 @@ hi! link jsxBraces NONE
 hi! link jsxComponentName NONE
 hi! link jsxCloseString NONE
 
+" HTML
+highlight htmlItalic ctermfg=6 ctermbg=NONE
+
 " Python
 highlight pythonImport ctermfg=10
 highlight pythonStatement ctermfg=10
@@ -146,3 +151,8 @@ highlight MatchParen ctermbg=0
 " highlight StatusLineNC ctermfg=8 ctermbg=7 cterm=NONE
 " highlight VertSplit ctermfg=8 ctermbg=7 cterm=NONE
 " highlight SignColumn ctermbg=7
+
+hi! SnipLeadingSpaces ctermbg=NONE
+
+" LaTeX
+hi! TexStyleItal ctermbg=NONE
